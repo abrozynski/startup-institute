@@ -1,0 +1,12 @@
+require_relative '../spec_helper'
+
+require 'factory_girl'
+
+describe Restaurant do
+  it "has a valid factory" do
+    FactoryGirl.create(:restaurant).should be_valid
+  end
+  it "is invalid without a name" do
+    FactoryGirl.build(:restaurant, name: nil).should_not be_valid
+  end
+end

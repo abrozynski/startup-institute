@@ -1,0 +1,19 @@
+<h1>Restaurants index</h1>
+ 
+<table>
+  <tr>
+    <th>Name</th>
+    <th>Cuisine</th>
+  </tr>
+ 
+  <% @restaurants.each do |restaurant| %>
+    <tr>
+      <td><%= restaurant.name %></td>
+      <td><%= restaurant.cuisine %></td>
+      <td><%= link_to 'Details', restaurant_path(restaurant.id) %></td>
+      <td><%= link_to 'Edit', restaurant_path(restaurant.id) %></td>
+    </tr>
+  <% end %>
+</table>
+
+<%= link_to 'New', new_restaurant_path %>

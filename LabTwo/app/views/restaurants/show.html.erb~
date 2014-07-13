@@ -1,0 +1,9 @@
+<p>
+  <strong>name:</strong>
+  <%= @restaurant.name %>
+</p>
+ 
+<p>
+  <strong>cuisine:</strong>
+  <%= @restaurant.cuisine %>
+</p>
