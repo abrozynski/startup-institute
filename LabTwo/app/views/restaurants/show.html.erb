@@ -1,3 +1,5 @@
+<%= image_tag @restaurant.image_url(:thumb) if @restaurant.image? %>
+
 <p>
   <strong>name:</strong>
   <%= @restaurant.name %>

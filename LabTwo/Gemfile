@@ -48,3 +48,9 @@ gem 'factory_girl_rails'
 
 gem 'faker'
 
+gem 'dotenv-rails', :groups => [:development, :test]
+
+gem 'bootstrap-sass'
+
+gem 'rmagick'
+gem 'carrierwave'
