@@ -17,6 +17,7 @@ ActiveRecord::Schema.define(version: 20140714183734) do
     t.text     "name"
     t.text     "phone_number"
     t.text     "cuisine"
+    t.text     "address"
     t.datetime "created_at"
     t.datetime "updated_at"
     t.string   "image"

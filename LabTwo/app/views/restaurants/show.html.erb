@@ -14,3 +14,5 @@
   <strong>cuisine:</strong>
   <%= @restaurant.cuisine %>
 </p>
+
+<%= image_tag http://maps.googleapis.com/maps/api/staticmap?center=#{@restaurant.address.to_s} %>
